@@ -29,7 +29,7 @@ const Cart = (props) => {
 
   const submitOrderHandler = async (userData) => {
     setIsSubmitting(true);
-    await fetch('https://react-udemy-17-default-rtdb.asia-southeast1.firebasedatabase.app/orders.json', {
+    await fetch('YOUR_CONNECTION_FIREBASE/orders.json', {
       method: 'POST',
       body: JSON.stringify({
         user: userData,
